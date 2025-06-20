@@ -37,7 +37,8 @@ export default tseslint.config(
       "no-unexpected-multiline": 2,
       "no-multiple-empty-lines": 2,
       "eol-last": ["error", "always"],
-      "no-console": ["warn", { allow: ["warn", "error"] }]	// Warns on most, but allows warn and error
+      "no-console": ["warn", { allow: ["warn", "error"] }],	// Warns on most, but allows warn and error
+      "semi": ["error", "always"],
     },
   },
 )
