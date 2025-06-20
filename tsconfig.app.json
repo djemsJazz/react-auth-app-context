@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "useDefineForClassFields": true, // Active le comportement de champ de classe standard, la declaration de classe ne changera pas dans la partie js
+    "lib": ["ES2020", "DOM", "DOM.Iterable"], // Spécifie les bibliothèques à inclure
+   
+    /* Bundler mode */
+    "jsx": "react-jsx", // Active le nouveau transformateur JSX (React 17+) → pas besoin d’importer React en haut de chaque fichier JSX.
+  },
+  "include": ["src"] // TypeScript n’analysera que les fichiers dans le dossier src/.
+}

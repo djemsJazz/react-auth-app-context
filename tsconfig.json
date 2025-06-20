@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Permet à TypeScript de ne recompiler que ce qui a changé.
+    "target": "ES2022", // Génère du JavaScript en syntaxe ES2022
+    "module": "ESNext", // Indique que le code utilise des modules ECMAScript modernes (import/export natif).
+    "skipLibCheck": true, // Ignore la vérification des types dans les fichiers *.d.ts (plus rapide).
+
+    /* Bundler */
+    "moduleResolution": "bundler", // Spécifique à Vite, TypeScript ne résout pas les modules (l'importation des fichiers) comme Node.js classique, mais fait confiance au bundler.
+    "allowImportingTsExtensions": true, // Autorise l’importation de fichiers avec extension .ts dans les chemins.
+    "verbatimModuleSyntax": true, // Ne transforme aucune syntaxe d’import/export : TypeScript émet exactement ce que tu as écrit
+    "moduleDetection": "force", // Force tous les fichiers .ts à être traités comme modules (et non scripts globaux).
+    "noEmit": true, // TypeScript ne génère pas de fichiers .js → Vite s’occupe de ça. TypeScript est utilisé seulement pour les types et la validation.
+
+    /* Linting */
+    "strict": true, // Active toutes les vérifications strictes (noImplicitAny, strictNullChecks, etc.).
+    "noUnusedLocals": true, // Erreur si tu déclares une variable locale non utilisée.
+    "noUnusedParameters": true, // Erreur si tu déclares un paramètre de fonction non utilisé.
+    "erasableSyntaxOnly": true, // Autorise uniquement la syntaxe que TypeScript peut effacer sans changer le comportement JS
+    "noFallthroughCasesInSwitch": true, 
+    "noUncheckedSideEffectImports": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
