@@ -13,7 +13,7 @@ const AppLayout: React.FC = () => {
         <p>AppLayout Footer</p>
       </footer>
     </div>
-  )
-}
+  );
+};
 
 export default AppLayout;

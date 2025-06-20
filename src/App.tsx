@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router";
 
-import './App.css'
+import './App.css';
 import HomePage from './modules/home';
 import AboutPage from './modules/about';
 import AppLayout from './shared/components/layouts';
@@ -33,7 +33,7 @@ const App: React.FC = () => {
         </Routes>
       </BrowserRouter>
     </AuthProvider>
-  )
-}
+  );
+};
 
-export default App
+export default App;

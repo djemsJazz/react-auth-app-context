@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useMemo, useState } from 'react'
+import { createContext, ReactNode, useMemo, useState } from 'react';
 
 type Props = {
   children: ReactNode
@@ -27,7 +27,7 @@ const AuthProvider = ({ children }: Props) => {
     <AuthContext.Provider value={contextValues}>
       {children}
     </AuthContext.Provider>
-  )
-}
+  );
+};
 
 export default AuthProvider;

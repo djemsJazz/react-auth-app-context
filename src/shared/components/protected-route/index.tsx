@@ -1,4 +1,4 @@
-import { ReactNode, useContext } from 'react'
+import { ReactNode, useContext } from 'react';
 import { AuthContext } from '../../../contexts/Auth';
 import { Navigate, useLocation } from 'react-router-dom';
 
@@ -11,7 +11,7 @@ const ProtectedRoute = ({ children }: Props) => {
   const { pathname } = useLocation();
   return (
     isAuthenticated ? children : <Navigate to={`/login?origin=${pathname}`} replace />
-  )
-}
+  );
+};
 
-export default ProtectedRoute
+export default ProtectedRoute;

@@ -8,7 +8,7 @@ const MainNav = () => {
   const handleLogout = () => {
     setIsAuthenticated(false);
     setUser(undefined);
-  }
+  };
   return (
     <nav className={styles.nav}>
       <p>AppLayout NAV</p>
@@ -19,7 +19,7 @@ const MainNav = () => {
         {(user && isAuthenticated) && <button onClick={handleLogout}>Logout</button>}
       </menu>
     </nav>
-  )
-}
+  );
+};
 
-export default MainNav
+export default MainNav;

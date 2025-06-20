@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom'
+import { useParams } from 'react-router-dom';
 
 const UserDetailsPage = () => {
   const { id } = useParams();
@@ -7,7 +7,7 @@ const UserDetailsPage = () => {
       <p>UserDetailsPage</p>
       this the details of User <strong>{id}</strong>
     </div>
-  )
-}
+  );
+};
 
-export default UserDetailsPage
+export default UserDetailsPage;

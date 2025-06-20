@@ -1,4 +1,4 @@
-import { NavLink, Outlet } from 'react-router-dom'
+import { NavLink, Outlet } from 'react-router-dom';
 
 const UsersLayout = () => {
   return (
@@ -10,7 +10,7 @@ const UsersLayout = () => {
       <Outlet />
       <h1>UsersLayout Footer</h1>
     </div>
-  )
-}
+  );
+};
 
-export default UsersLayout
+export default UsersLayout;

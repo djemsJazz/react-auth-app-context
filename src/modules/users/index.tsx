@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router'
+import { Route, Routes } from 'react-router';
 import ListUsersPage from './pages/ListUsersPage';
 import CreateUserPage from './pages/CreateUserPage';
 import UsersLayout from '../../shared/components/layouts/UsersLayout';
@@ -13,7 +13,7 @@ const UsersRouter = () => {
         <Route path="/:id" element={<UserDetailsPage />} />
       </Route>
     </Routes>
-  )
-}
+  );
+};
 
 export default UsersRouter;

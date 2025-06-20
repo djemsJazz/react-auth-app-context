@@ -1,5 +1,5 @@
-import reactLogo from '../../assets/react.svg'
-import viteLogo from '/vite.svg'
+import reactLogo from '../../assets/react.svg';
+import viteLogo from '/vite.svg';
 
 const HomePage = () => {
   return (
@@ -22,7 +22,7 @@ const HomePage = () => {
         Click on the Vite and React logos to learn more
       </p>
     </div>
-  )
-}
+  );
+};
 
-export default HomePage
+export default HomePage;

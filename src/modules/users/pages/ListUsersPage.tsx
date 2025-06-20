@@ -6,7 +6,7 @@ const ListUsersPage = () => {
       <p>ListUsersPage</p>
       <Link to="/users/1">User 1 details</Link>
     </div>
-  )
-}
+  );
+};
 
 export default ListUsersPage;
