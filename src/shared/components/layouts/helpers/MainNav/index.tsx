@@ -3,6 +3,7 @@ import styles from './main-nav.module.css';
 import { useContext } from 'react';
 import { AuthContextR } from '../../../../../contexts/AuthReducer';
 import { LOGOUT } from '../../../../../contexts/helpers/auth.action';
+import ProtectedLink from '../../../protected-link';
 
 const MainNav = () => {
   const { state: { user, isAuthenticated }, dispatch } = useContext(AuthContextR);
@@ -16,6 +17,7 @@ const MainNav = () => {
         <NavLink className={({ isActive }) => isActive ? styles.active : undefined} to="/" end>Home</NavLink>
         <NavLink className={({ isActive }) => isActive ? styles.active : undefined} to="/users" end>Users</NavLink>
         <NavLink className={({ isActive }) => isActive ? styles.active : undefined} to="/users/create" end>Create User</NavLink>
+        <ProtectedLink inNav className={({ isActive }) => isActive ? styles.active : undefined} to="/profile" end>Profile</ProtectedLink>
         {(user && isAuthenticated) ? <button onClick={handleLogout}>Logout</button> : (
           <NavLink className={({ isActive }) => isActive ? styles.active : undefined} to="/login" end>
             <button >login</button>
