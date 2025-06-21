@@ -5,7 +5,7 @@ import HomePage from './modules/home';
 import AboutPage from './modules/about';
 import AppLayout from './shared/components/layouts';
 import UsersRouter from './modules/users';
-import AuthProvider from './contexts/Auth';
+import AuthReducerProvider from './contexts/AuthReducer';
 import ProtectedRoute from './shared/components/protected-route';
 import UserProfile from './modules/users/pages/UserProfile';
 import NotFoundPage from './modules/not-found/NotFoundPage';
@@ -14,7 +14,7 @@ import LoginPage from './modules/auth/pages/LoginPage';
 
 const App: React.FC = () => {
   return (
-    <AuthProvider>
+    <AuthReducerProvider>
       <BrowserRouter>
         <Routes>
           <Route element={<AppLayout />}>
@@ -32,7 +32,7 @@ const App: React.FC = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </AuthProvider>
+    </AuthReducerProvider>
   );
 };
 

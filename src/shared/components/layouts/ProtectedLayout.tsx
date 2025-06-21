@@ -1,10 +1,10 @@
 import { useContext } from 'react';
-import { AuthContext } from '../../../contexts/Auth';
 import { Navigate, Outlet, useLocation } from 'react-router-dom';
+import { AuthContextR } from '../../../contexts/AuthReducer';
 
 
 const ProtectedLayout = () => {
-  const { isAuthenticated } = useContext(AuthContext);
+  const { state: { isAuthenticated } } = useContext(AuthContextR);
   const { pathname } = useLocation();
   return (
     isAuthenticated ? <Outlet /> : <Navigate to={`/login?origin=${pathname}`} replace />
