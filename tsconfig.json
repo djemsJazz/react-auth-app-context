@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Permet à TypeScript de ne recompiler que ce qui a changé.
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo", // Permet à TypeScript de ne recompiler UNIQUEMENT ce qui a changé.
     "target": "ES2022", // Génère du JavaScript en syntaxe ES2022
     "module": "ESNext", // Indique que le code utilise des modules ECMAScript modernes (import/export natif).
     "skipLibCheck": true, // Ignore la vérification des types dans les fichiers *.d.ts (plus rapide).
