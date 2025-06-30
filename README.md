@@ -1,4 +1,4 @@
-## Simple React Auth App Template - Auth Managed With Context
+## Simple React Auth App Template - Auth Managed With Context API
 
 I created this repos, in order to have an out of the box react auth app.
 
